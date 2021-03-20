@@ -1,0 +1,21 @@
+{
+	"Record": {
+		"NextStep": "Next",
+		"Provide": {
+			"Audio": {
+				"Description": "Recordings for user",
+				"Header": "Record audio",
+				"Start": "Start Recording",
+				"Stop": "Stop Recording"
+			},
+			"ID": {
+				"Header": "Provide an ID",
+				"Label": "Number or word",
+				"Placeholder": "1234 or Test1234"
+			}
+		}
+	},
+	"Toolbar": {
+		"Title": "Audio Recorder"
+	}
+}

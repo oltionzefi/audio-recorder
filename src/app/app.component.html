@@ -1,0 +1,73 @@
+<div class="container">
+  <mat-toolbar>
+    <button
+      mat-icon-button
+      class="title-icon"
+      attr.aria-label="{{ 'Toolbar.Title' | translate }}"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <span translate>Toolbar.Title</span>
+    <span class="header-spacer"></span>
+  </mat-toolbar>
+  <mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup" [editable]="editable">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>
+          {{ "Record.Provide.ID.Header" | translate }}
+        </ng-template>
+        <mat-form-field>
+          <mat-label translate>Record.Provide.ID.Label</mat-label>
+          <input
+            matInput
+            formControlName="firstCtrl"
+            placeholder="{{ 'Record.Provide.ID.Placeholder' | translate }}"
+            required
+          />
+        </mat-form-field>
+        <div>
+          <button
+            mat-button
+            matStepperNext
+            color="primary"
+            (click)="editable = !editable"
+          >
+            {{ "Record.NextStep" | translate }}
+          </button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        {{ "Record.Provide.Audio.Header" | translate }}
+      </ng-template>
+      <p>
+        {{ "Record.Provide.Audio.Description" | translate }}
+        {{ firstFormGroup.get("firstCtrl")?.value }}.
+      </p>
+      <div style="text-align: center; margin-top: 200px">
+        <button
+          mat-button
+          (click)="initiateRecording()"
+          *ngIf="!recording"
+          style="cursor: pointer"
+          color="primary"
+        >
+          {{ "Record.Provide.Audio.Start" | translate }}
+        </button>
+        <button
+          mat-button
+          (click)="stopRecording()"
+          *ngIf="recording"
+          style="cursor: pointer"
+          color="warn"
+        >
+          {{ "Record.Provide.Audio.Stop" | translate }}
+        </button>
+        <audio controls="" *ngIf="url">
+          <source [src]="sanitize(url)" type="audio/wav" />
+        </audio>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>
