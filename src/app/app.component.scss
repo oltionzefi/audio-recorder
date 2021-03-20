@@ -3,6 +3,11 @@
   padding: 20px;
 }
 
+.recording-container {
+  text-align: center;
+  margin-top: 150px
+}
+
 .mat-stepper-horizontal {
   margin-top: 8px;
   padding-left: 20px;
@@ -15,4 +20,43 @@
 
 .header-spacer {
   flex: 1 1 auto;
+}
+
+.btn-div {
+  width: 100%;
+  text-align: center;
+
+  button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+audio {
+  outline: none;
+}
+
+svg:hover {
+  fill: red;
+}
+
+.recording-timer {
+  font-family: monospace
+}
+
+.btn-clicked {
+  background-color: #7FFFD4;
+}
+
+.btn-initial-state {
+  background-color: #ff7267;
+}
+
+.audio-description {
+  text-align: center;
+  margin-top: 20px;
 }

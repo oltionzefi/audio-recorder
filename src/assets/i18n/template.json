@@ -1,11 +1,9 @@
 {
-	"Record.Provide.ID.Placeholder": "Record.Provide.ID.Placeholder",
-	"Record.NextStep": "Record.NextStep",
-	"Record.Provide.Audio.Description": "Record.Provide.Audio.Description",
-	"Record.Provide.Audio.Start": "Record.Provide.Audio.Start",
-	"Record.Provide.Audio.Stop": "Record.Provide.Audio.Stop",
 	"Toolbar.Title": "Toolbar.Title",
 	"Record.Provide.ID.Header": "Record.Provide.ID.Header",
-	"Record.Provide.ID.Label": "Record.Provide.ID.Label",
-	"Record.Provide.Audio.Header": "Record.Provide.Audio.Header"
+	"Record.Provide.ID.Placeholder": "Record.Provide.ID.Placeholder",
+	"Record.NextStep": "Record.NextStep",
+	"Record.Provide.Audio.Header": "Record.Provide.Audio.Header",
+	"Record.Provide.Audio.Description": "Record.Provide.Audio.Description",
+	"Record.Provide.ID.Label": "Record.Provide.ID.Label"
 }

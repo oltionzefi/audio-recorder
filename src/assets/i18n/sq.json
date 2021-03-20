@@ -4,9 +4,7 @@
 		"Provide": {
 			"Audio": {
 				"Description": "Regjistrime për përdoruesin",
-				"Header": "Regjistro një audio",
-				"Start": "Fillo regjistrimin",
-				"Stop": "Ndalo regjistrimin"
+				"Header": "Regjistro një audio"
 			},
 			"ID": {
 				"Header": "Shkruaj një numër ose fjalë",

@@ -10,14 +10,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+
+import { AppComponent } from './app.component';
+import { RecordService } from './record.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -41,7 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
-  providers: [],
+  providers: [RecordService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

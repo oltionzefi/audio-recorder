@@ -4,9 +4,7 @@
 		"Provide": {
 			"Audio": {
 				"Description": "Recordings for user",
-				"Header": "Record audio",
-				"Start": "Start Recording",
-				"Stop": "Stop Recording"
+				"Header": "Record audio"
 			},
 			"ID": {
 				"Header": "Provide an ID",
