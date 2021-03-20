@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as RecordRTC from 'recordrtc';
 import { DomSanitizer } from '@angular/platform-browser';
+import { UploadService } from './upload.service';
 
 @Injectable({
   providedIn: 'root',
@@ -21,7 +22,10 @@ export class RecordService {
     mimeType: 'audio/wav',
   };
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(
+    private readonly sanitizer: DomSanitizer,
+    private readonly upload: UploadService
+  ) {}
 
   toggleRecord() {
     if (this.recordingTimer) {
@@ -49,6 +53,14 @@ export class RecordService {
   stopRTC() {
     this.recordWebRTC.stop((blob: any) => {
       //NOTE: upload on server
+      this.upload.upload(blob).subscribe(
+        (value: any) => {
+          console.log(value);
+        },
+        (error: any) => {
+          console.error(error);
+        }
+      );
       this.blobUrl = this.sanitizer.bypassSecurityTrustUrl(
         URL.createObjectURL(blob)
       );

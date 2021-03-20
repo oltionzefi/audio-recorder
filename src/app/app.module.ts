@@ -19,6 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 import { AppComponent } from './app.component';
 import { RecordService } from './record.service';
+import { UploadService } from './upload.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -42,7 +43,7 @@ import { RecordService } from './record.service';
       },
     }),
   ],
-  providers: [RecordService],
+  providers: [RecordService, UploadService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
