@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  audio-recorder:
+    container_name: audio-recorder
+    build: .
+    ports:
+      - '9000:80'
