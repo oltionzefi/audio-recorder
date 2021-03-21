@@ -11,6 +11,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatDividerModule } from '@angular/material/divider';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -42,6 +43,7 @@ import { UploadService } from './upload.service';
         deps: [HttpClient],
       },
     }),
+    MatDividerModule,
   ],
   providers: [RecordService, UploadService],
   bootstrap: [AppComponent],

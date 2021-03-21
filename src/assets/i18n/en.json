@@ -1,10 +1,24 @@
 {
 	"Record": {
+		"Done": "Done",
 		"NextStep": "Next",
+		"PreviousStep": "Back",
 		"Provide": {
 			"Audio": {
 				"Description": "Recordings for user",
-				"Header": "Record audio"
+				"Header": "Record audio",
+				"HelperText": "Please read the sentence below",
+				"Sentence": "Sentence",
+				"Sentence1": "Hello!",
+				"Sentence10": "I love the world and life.",
+				"Sentence2": "Alex can walk by himself.",
+				"Sentence3": "Sentence3",
+				"Sentence4": "Sentence4",
+				"Sentence5": "Sentence5",
+				"Sentence6": "Sentence6",
+				"Sentence7": "Sentence7",
+				"Sentence8": "Sentence8",
+				"Sentence9": "Sentence9"
 			},
 			"ID": {
 				"Header": "Provide an ID",

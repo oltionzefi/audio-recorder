@@ -5,7 +5,7 @@
 
 .recording-container {
   text-align: center;
-  margin-top: 150px
+  margin-top: 80px
 }
 
 .mat-stepper-horizontal {
@@ -22,9 +22,14 @@
   flex: 1 1 auto;
 }
 
+.mat-divider {
+  margin: 20px;
+}
+
 .btn-div {
   width: 100%;
   text-align: center;
+  margin-top: 60px;
 
   button {
     width: 100px;

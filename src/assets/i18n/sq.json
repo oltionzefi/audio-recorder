@@ -1,10 +1,24 @@
 {
 	"Record": {
+		"Done": "Përfundo",
 		"NextStep": "Hapi tjetër",
+		"PreviousStep": "Kthehu mbrapa",
 		"Provide": {
 			"Audio": {
 				"Description": "Regjistrime për përdoruesin",
-				"Header": "Regjistro një audio"
+				"Header": "Regjistro një audio",
+				"HelperText": "Të lutem lexoje fjalinë e mëposhtme",
+				"Sentence": "Fjalia",
+				"Sentence1": "Përshendetje!",
+				"Sentence10": "Unë e dua jetën dhe botën.",
+				"Sentence2": "Beni ecën vetë.",
+				"Sentence3": "Fjalia3",
+				"Sentence4": "Fjalia4",
+				"Sentence5": "Fjalia5",
+				"Sentence6": "Fjalia6",
+				"Sentence7": "Fjalia7",
+				"Sentence8": "Fjalia8",
+				"Sentence9": "Fjalia9"
 			},
 			"ID": {
 				"Header": "Shkruaj një numër ose fjalë",

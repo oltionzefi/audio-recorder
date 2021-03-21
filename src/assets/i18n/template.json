@@ -5,5 +5,19 @@
 	"Record.NextStep": "Record.NextStep",
 	"Record.Provide.Audio.Header": "Record.Provide.Audio.Header",
 	"Record.Provide.Audio.Description": "Record.Provide.Audio.Description",
-	"Record.Provide.ID.Label": "Record.Provide.ID.Label"
+	"Record.Provide.Audio.HelperText": "Record.Provide.Audio.HelperText",
+	"Record.Provide.Audio.Sentence": "Record.Provide.Audio.Sentence",
+	"Record.PreviousStep": "Record.PreviousStep",
+	"Record.Done": "Record.Done",
+	"Record.Provide.ID.Label": "Record.Provide.ID.Label",
+	"Record.Provide.Audio.Sentence1": "Record.Provide.Audio.Sentence1",
+	"Record.Provide.Audio.Sentence2": "Record.Provide.Audio.Sentence2",
+	"Record.Provide.Audio.Sentence3": "Record.Provide.Audio.Sentence3",
+	"Record.Provide.Audio.Sentence4": "Record.Provide.Audio.Sentence4",
+	"Record.Provide.Audio.Sentence5": "Record.Provide.Audio.Sentence5",
+	"Record.Provide.Audio.Sentence6": "Record.Provide.Audio.Sentence6",
+	"Record.Provide.Audio.Sentence7": "Record.Provide.Audio.Sentence7",
+	"Record.Provide.Audio.Sentence8": "Record.Provide.Audio.Sentence8",
+	"Record.Provide.Audio.Sentence9": "Record.Provide.Audio.Sentence9",
+	"Record.Provide.Audio.Sentence10": "Record.Provide.Audio.Sentence10"
 }
