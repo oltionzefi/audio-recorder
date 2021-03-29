@@ -13,6 +13,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecordService } from './record.service';
 import { HttpLoaderFactory } from './app.module';
+import { MatDividerModule } from '@angular/material/divider';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -36,6 +37,7 @@ describe('AppComponent', () => {
             deps: [HttpClient],
           },
         }),
+        MatDividerModule,
       ],
       declarations: [AppComponent],
       providers: [RecordService],

@@ -51,7 +51,7 @@ export class RecordService {
   }
 
   stopRTC() {
-    this.recordWebRTC.stop((blob: any) => {
+    this.recordWebRTC.stop((blob: Blob) => {
       //NOTE: upload on server
       this.upload.upload(blob).subscribe(
         (value: any) => {
